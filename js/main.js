@@ -52,7 +52,6 @@
         portfolioIsotope.isotope({filter: $(this).data('filter')});
     });
     
-    
     // Review slider
     $('.review-slider').slick({
         autoplay: true,
@@ -61,7 +60,6 @@
         slidesToShow: 1,
         slidesToScroll: 1
     });
-    
     
     // Back to top button
     $(window).scroll(function () {
@@ -75,5 +73,14 @@
         $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
         return false;
     });
+
+    // Download PDF Function
+    window.downloadPDF = function () {
+        const link = document.createElement('a');
+        link.href = 'assets/CV.pdf'; // Cambia la ruta según corresponda
+        link.download = 'CV.pdf'; // Nombre del archivo al descargar
+        link.target = '_blank'; // Abre en una nueva pestaña (si el navegador lo permite)
+        link.click();
+    };
 })(jQuery);
 
