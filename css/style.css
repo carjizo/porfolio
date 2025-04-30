@@ -421,6 +421,12 @@ a:focus {
 /**********************************/
 /*********** About CSS ************/
 /**********************************/
+
+.skill-name-stacks p {
+    margin: 8px 0;
+    font-size: 16px;
+}
+
 .about {
     position: relative;
     padding: 60px 30px;
@@ -696,7 +702,6 @@ a:focus {
 /**********************************/
 /********** Portfolio CSS *********/
 /**********************************/
-
 .portfolio {
     position: relative;
     padding: 60px 30px 30px 30px;
